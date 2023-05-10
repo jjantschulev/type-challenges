@@ -1,1 +1,1 @@
-type Slice<Arr, Start, End> = any
+type Slice<Arr extends any[], Start extends number, End extends number, CStart extends number = 0, CEnd extends number = Arr['length']> = Start extends CStart ? (End extends CEnd ? Arr : ) : (End extends CEnd ?  : )

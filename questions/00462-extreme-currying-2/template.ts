@@ -1,1 +1,1 @@
-declare function DynamicParamsCurrying(fn: any): any
+declare function DynamicParamsCurrying<Fn extends (...Args)>(fn: Fn): any
